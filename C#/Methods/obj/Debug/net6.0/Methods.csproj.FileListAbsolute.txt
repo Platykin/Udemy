@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Methods\bin\Debug\net6.0\Methods.exe
+C:\dev\Udemy\C#\Methods\bin\Debug\net6.0\Methods.deps.json
+C:\dev\Udemy\C#\Methods\bin\Debug\net6.0\Methods.runtimeconfig.json
+C:\dev\Udemy\C#\Methods\bin\Debug\net6.0\Methods.dll
+C:\dev\Udemy\C#\Methods\bin\Debug\net6.0\Methods.pdb
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.AssemblyInfo.cs
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.dll
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\refint\Methods.dll
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.pdb
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\Methods.genruntimeconfig.cache
+C:\dev\Udemy\C#\Methods\obj\Debug\net6.0\ref\Methods.dll
