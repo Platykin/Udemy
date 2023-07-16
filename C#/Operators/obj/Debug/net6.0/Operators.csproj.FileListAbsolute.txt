@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Operators\bin\Debug\net6.0\Operators.exe
+C:\dev\Udemy\C#\Operators\bin\Debug\net6.0\Operators.deps.json
+C:\dev\Udemy\C#\Operators\bin\Debug\net6.0\Operators.runtimeconfig.json
+C:\dev\Udemy\C#\Operators\bin\Debug\net6.0\Operators.dll
+C:\dev\Udemy\C#\Operators\bin\Debug\net6.0\Operators.pdb
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.AssemblyInfo.cs
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.dll
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\refint\Operators.dll
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.pdb
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\Operators.genruntimeconfig.cache
+C:\dev\Udemy\C#\Operators\obj\Debug\net6.0\ref\Operators.dll
