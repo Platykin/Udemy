@@ -21,7 +21,7 @@
 
             if (temperature == 20)
             {
-                Console.WriteLine("It's 10 degrees");
+                Console.WriteLine("It's 10 degrees!");
             } else if (temperature < 20)
             {
                 Console.WriteLine("Take a coat!");
