@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\bin\Debug\net6.0\EnhancedIfStatements.exe
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\bin\Debug\net6.0\EnhancedIfStatements.deps.json
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\bin\Debug\net6.0\EnhancedIfStatements.runtimeconfig.json
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\bin\Debug\net6.0\EnhancedIfStatements.dll
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\bin\Debug\net6.0\EnhancedIfStatements.pdb
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.AssemblyInfo.cs
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.dll
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\refint\EnhancedIfStatements.dll
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.pdb
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\EnhancedIfStatements.genruntimeconfig.cache
+C:\dev\Udemy\C#\Chapter4\EnhancedIfStatements\obj\Debug\net6.0\ref\EnhancedIfStatements.dll
