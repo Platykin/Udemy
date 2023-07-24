@@ -8,7 +8,7 @@
             Console.Write("Enter the current temperature: ");
             string inputTemperature = Console.ReadLine();
             int temperature = 0;
-            int tryParseTemperature;
+            int tryParseTemperature;efe
             
             if (int.TryParse(inputTemperature, out tryParseTemperature))
             {
