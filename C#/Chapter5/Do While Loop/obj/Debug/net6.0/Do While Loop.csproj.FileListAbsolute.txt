@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Chapter5\Do While Loop\bin\Debug\net6.0\Do While Loop.exe
+C:\dev\Udemy\C#\Chapter5\Do While Loop\bin\Debug\net6.0\Do While Loop.deps.json
+C:\dev\Udemy\C#\Chapter5\Do While Loop\bin\Debug\net6.0\Do While Loop.runtimeconfig.json
+C:\dev\Udemy\C#\Chapter5\Do While Loop\bin\Debug\net6.0\Do While Loop.dll
+C:\dev\Udemy\C#\Chapter5\Do While Loop\bin\Debug\net6.0\Do While Loop.pdb
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.AssemblyInfo.cs
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.dll
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\refint\Do While Loop.dll
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.pdb
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\Do While Loop.genruntimeconfig.cache
+C:\dev\Udemy\C#\Chapter5\Do While Loop\obj\Debug\net6.0\ref\Do While Loop.dll
