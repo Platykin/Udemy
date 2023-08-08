@@ -20,6 +20,12 @@ namespace Do_While_Loop
             long timerMS = timer.ElapsedMilliseconds;
             Console.WriteLine("O tempo percorrido foi de {0}ms", timerMS);
 
+            for (int i = 0; i < 20; i++) {
+                if (i == 13) { Console.WriteLine("\nWe skip 13!"); continue; }
+                if (i == 19) { Console.WriteLine("In 19 we break!"); break; }
+                Console.WriteLine(i);
+            }
+
         }
     }
 }
