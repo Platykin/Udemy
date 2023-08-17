@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Chapter5\Loops in general\bin\Debug\net6.0\Loops in general.exe
+C:\dev\Udemy\C#\Chapter5\Loops in general\bin\Debug\net6.0\Loops in general.deps.json
+C:\dev\Udemy\C#\Chapter5\Loops in general\bin\Debug\net6.0\Loops in general.runtimeconfig.json
+C:\dev\Udemy\C#\Chapter5\Loops in general\bin\Debug\net6.0\Loops in general.dll
+C:\dev\Udemy\C#\Chapter5\Loops in general\bin\Debug\net6.0\Loops in general.pdb
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.AssemblyInfo.cs
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.dll
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\refint\Loops in general.dll
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.pdb
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\Loops in general.genruntimeconfig.cache
+C:\dev\Udemy\C#\Chapter5\Loops in general\obj\Debug\net6.0\ref\Loops in general.dll
