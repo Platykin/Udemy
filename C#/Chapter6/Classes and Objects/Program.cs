@@ -6,7 +6,7 @@ namespace Classes_and_Objects
     {
         static void Main(string[] args)
         {
-            
+            Car myCar = new Car();
             Car audi = new Car("audi", 198);
             audi.Drive();
             
@@ -25,6 +25,7 @@ namespace Classes_and_Objects
             }
             bmw.GetInfo();
             audi.GetInfo();
+            myCar.GetInfo();
         }
     }
 }

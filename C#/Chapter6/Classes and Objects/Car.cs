@@ -10,6 +10,12 @@ namespace Classes_and_Objects
     {
         private string _name;
         private int _hp;
+
+        public Car()
+        {
+            _name = "Car";
+            _hp = 0;    
+        }
         public Car(string name, int hp = 0)
         {
             _name = name;
@@ -21,7 +27,7 @@ namespace Classes_and_Objects
 
         public void Stop() { Console.WriteLine("{0} stoped!", _name); }
 
-        public void GetInfo() { Console.WriteLine("Model: {0}, Horse Power: {1}", _name, _hp); }
+        public void GetInfo() { Console.WriteLine("Model: {0} has {1} horse power", _name, _hp); }
 
     }
 }
