@@ -1,0 +1,15 @@
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\bin\Debug\net6.0\Classes and Objects.exe
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\bin\Debug\net6.0\Classes and Objects.deps.json
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\bin\Debug\net6.0\Classes and Objects.runtimeconfig.json
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\bin\Debug\net6.0\Classes and Objects.dll
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\bin\Debug\net6.0\Classes and Objects.pdb
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.csproj.AssemblyReference.cache
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.AssemblyInfoInputs.cache
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.AssemblyInfo.cs
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.csproj.CoreCompileInputs.cache
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.dll
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\refint\Classes and Objects.dll
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.pdb
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\Classes and Objects.genruntimeconfig.cache
+C:\dev\Udemy\C#\Chapter6\Classes and Objects\obj\Debug\net6.0\ref\Classes and Objects.dll
