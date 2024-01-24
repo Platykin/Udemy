@@ -53,17 +53,43 @@ namespace _07_Arrays
             //for (int j = 0; j < migus.Length; j++)
             //{
             //    Console.WriteLine("Olá, {0}", migus[j]);
-            int[] numbers = { 1, 2, 3, 4, 5 };
+            //int[] numbers = { 1, 2, 3, 4, 5 };
 
-            foreach(int number in numbers)
-            {
-                Console.WriteLine(number);
-            }
+            //foreach(int number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
 
-            for (int i = numbers.Length - 1; i >= 0; i--)
-            {
-                Console.WriteLine(numbers[i]);
-            }
+            //for (int i = numbers.Length - 1; i >= 0; i--)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //Foreach loop can't change the value of the matrix, since the values are passed as references
+            //But nested for loops can alter the values
+
+            //int[,] integers = new int[,]
+            //{
+            //    {1, 2, 3 },
+            //    { 4, 5, 6 },
+            //    { 7, 8, 9 },
+            //};
+
+            //for (int i = 0; i < integers.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < integers.GetLength(1); j++)
+            //    {
+            //        if (integers[i, j] % 2 == 0)
+            //        {
+            //            Console.WriteLine(integers[i, j]);
+            //        }
+            //    }
+            //}
+
+            string teste = "X";
+            teste = teste + "X";
+            Console.WriteLine(teste);
+
 
         }
     }    
