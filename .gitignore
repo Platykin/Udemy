@@ -1,0 +1,10 @@
+# Arquivos temporários
+*.log
+*.tmp
+
+# Diretórios de compilação
+bin/
+obj/
+
+# Arquivos sensíveis
+credentials.txt
