@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,66 +9,103 @@ namespace TicTacToe
 {
     class Program
     {
-        static void Main(string[] args)
+
+        static string[,] board = new string[,]
         {
-            string[,] board = new string[,]
-            {
                 { "1", "2", "3"},
                 { "4", "5", "6"},
                 { "7", "8", "9"}
-            };
+        };
+
+        static string[,] initialBoard = new string[,]
+        {
+                { "1", "2", "3"},
+                { "4", "5", "6"},
+                { "7", "8", "9"}
+        };
+
+        static void drawBoard(string[,] boardToBeDrawn)
+        {
+            for (int i = 0; i < board.GetLength(0); i++)
+            {
+                Console.WriteLine("\n");
+                for (int j = 0; j < board.GetLength(1); j++)
+                {
+                    if (j == (board.GetLength(1) - 1))
+                    {
+                        Console.Write(" | " + board[i, j] + " |");
+                    }
+                    else
+                    {
+                        Console.Write(" | " + board[i, j]);
+                    }
+                }
+                Console.WriteLine("\n_______________");
+            }
+        }
+            static int turn = 0;
+        static void Main(string[] args)
+        {
             int player = 1;
+
+            void winer()
+            {
+                Console.WriteLine("Congratz! Player {0} won!", player);
+            }
 
             bool gameOver(string[,] Array)
             {
+                Console.Clear();
+                drawBoard(board);
                 for (int k = 0; k < Array.GetLength(0); k++)
                 {
                     if (Array[k, 0] == Array[k, 1] && Array[k, 0] == Array[k, 2])
-                    {              
+                    {
+                        winer();
                         return true;
                     }
                     if (Array[0, k] == Array[1, k] && Array[0, k] == Array[2, k])
                     {
+                        winer();
                         return true;
                     }
                 }
                 if (Array[0, 0] == Array[1, 1] && Array[0,0] == Array[2, 2])
                 {
+                    winer();
                     return true;
                 }
                 if (Array[0, 2] == Array[1, 1] && Array[0, 2] == Array[2, 0])
                 {
+                    winer();
+                    return true;
+                }
+                if (turn == 10)
+                {
+                    Console.WriteLine("It's a tie!");
                     return true;
                 }
                 return false;
             }
             bool end = false;
+
+
+
             while (!end)
             {
+                Console.Clear();
                 string playerMove = "0";
                 int integerPlayerMove = 0;
-                for (int i = 0; i < board.GetLength(0); i++)
-                {
-                    Console.WriteLine("\n");
-                    for (int j = 0; j < board.GetLength(1); j++)
-                    {
-                        if (j == (board.GetLength(1) - 1))
-                        {
-                            Console.Write(" | " + board[i, j] + " |");
-                        }
-                        else
-                        {
-                            Console.Write(" | " + board[i, j]);
-                        }
-                    }
-                    Console.WriteLine("\n_______________");
-                }            
-                end = gameOver(board);
                 if (player == 1)
                 {
                     Console.WriteLine("It's your turn, player 1. In which place do you want to play?");
                     try
                     {
+                        if (turn == 0)
+                        {
+                            drawBoard(initialBoard);
+                        }
+                        else { drawBoard(board); }
                         playerMove = Console.ReadLine();
                         integerPlayerMove = int.Parse(playerMove);
                     }
@@ -86,9 +124,14 @@ namespace TicTacToe
                         Console.WriteLine("It's your turn, player 2. Which place do you want to play? ");
                         try
                         {
+                            if (turn == 0)
+                            {
+                                drawBoard(initialBoard);
+                            }
+                            else { drawBoard(board); }
                             playerMove = Console.ReadLine();
-                            integerPlayerMove = int.Parse(playerMove);
-                        }
+                            integerPlayerMove = int.Parse(playerMove);                          
+                    }
                         catch (ArgumentNullException)
                         {
                             Console.WriteLine("You should choose one of the available number as your move!");
@@ -111,24 +154,26 @@ namespace TicTacToe
                         if(counter == integerPlayerMove && player == 1)
                         {
                             board[k, l] = "X";
-                            player += 1;
                         }
                         else if(counter == integerPlayerMove && player == 2)
                         {
                             board[k, l] = "O";
-                            player -= 1;
                         }
                         counter++;
                     }
                 }
-
-
+                turn++;
+                end = gameOver(board);
+                if(player == 1)
+                {
+                    player = 2;
+                }
+                else
+                {
+                    player = 1;
+                }
             }
 
-            if (end == true)
-            {
-                Console.WriteLine("Congratz! Player {0} won!", player);
-            }
 
         }
     }
