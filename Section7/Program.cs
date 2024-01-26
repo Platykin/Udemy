@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +12,7 @@ namespace _07_Arrays
     {
         static void Main(string[] args)
         {
+            #region
             //int[] grades = new int[5];
             //grades[0] = 20;
             //grades[1] = 15;
@@ -86,11 +89,145 @@ namespace _07_Arrays
             //    }
             //}
 
-            string teste = "X";
-            teste = teste + "X";
-            Console.WriteLine(teste);
+            //string teste = "X";
+            //teste = teste + "X";
+            //Console.WriteLine(teste);
+            //Jagged arrays are betters than multi dimensional arrays when some arrays don't have
+            //the same size
+            //int[][] jaggedArray = new int[3][];
+            //jaggedArray[0] = new int[5];
+            //jaggedArray[1] = new int[3];
+            //jaggedArray[2] = new int[2];
+
+            //jaggedArray[0] = new int[] { 8, 2, 6, 3, 10 };
+            //jaggedArray[1] = new int[] { 81, 65, 99 };
+            //jaggedArray[2] = new int[] { 115, 22 };
+
+            //Console.WriteLine("The value in the middle is: {0}", jaggedArray[1][1]);
+
+
+
+
+
+            //string[] igorFamily = new string[]
+            //{
+            //    "Socorro", "Rogerio", "Icaro"
+            //};
+
+            //string[] sarahFamily = new string[]
+            //{
+            //    "Alessandra", "Gilberto"
+            //};
+
+            //string[][] familyMembers = new string[2][]
+            //{
+            //    igorFamily, sarahFamily
+            //};
+
+            //foreach (string igorFamilyMember in igorFamily)
+            //{
+            //    foreach(string sarahFamilyMember in sarahFamily)
+            //    {
+            //        Console.WriteLine("{0} says hi to {1}", igorFamilyMember, sarahFamilyMember);
+            //    }
+            //}
+            //int[] studentsGrades = new int[] { 5, 6, 8, 8, 1, 5, 3, 9, 2, 7, 4, 3, 8, 9, 5, 7, 4, 3, 6, 10, 10 };
+
+            //Console.WriteLine(GetAvarage(studentsGrades));
+
+            //int[] mood = new int[] { 5, 3, 6, 8, 1 };
+
+            //int[] SunIsShining(int[] moodToImprove)
+            //{
+            //    for (int i = 0; i < moodToImprove.Length; i++)
+            //    {
+            //        mood[i] += 2;
+            //    }
+            //    return moodToImprove;
+            //}
+
+            //SunIsShining(mood);
+
+            //foreach(int newMood in mood)
+            //{
+            //    Console.WriteLine("Before the improvement, the mood was {0}, now it is {1}!", newMood-2, newMood);
+
+            //Console.WriteLine(Sum(numbers));
+
+            //int soma1 = Sum(1, 2, 3, 4, 5, 6, 7, 8, 43, 66, 32, 32, 43, 54, 56, 4, 2);
+            //int soma2 = Sum(6, 7, 8, 43, 66);
+            //int soma3 = Sum(1, 2, 3, 4, 5, 6, 7);
+
+            //Console.WriteLine(soma1);
+            //Console.WriteLine(soma2);
+            //Console.WriteLine(soma3);
+            //}
+            //int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 43, 66, 32, 32, 43, 54, 56, 4, 2 };
+            #endregion // Code that became comments.
+            //Code tha became comments. Improves readability
+
+            ArrayList myArrayList = new ArrayList();
+            ArrayList myArrayList2 = new ArrayList(100);
+
+            myArrayList.Add(25);
+            myArrayList.Add("Hello");
+            myArrayList.Add(13.37);
+            myArrayList.Add(13.37);
+            myArrayList.Add(11);
+            myArrayList.Add("Caviar");
+
+            myArrayList.Remove(25);
+            myArrayList.RemoveAt(1);
+
+            Console.WriteLine(myArrayList.Count);
+
+
+            double sum = 0;
+            foreach (object obj in myArrayList)
+            {
+                if (obj is int)
+                {
+                    sum += Convert.ToDouble(obj);
+                }
+                else if (obj is double)
+                {
+                    sum += (double)obj;
+                }
+                else if (obj is string)
+                {
+                    Console.WriteLine(obj);
+                }
+            }
+            List<int> evenValues = new List<int> { };
+
+
 
 
         }
-    }    
+
+        //public static int Sum(params int[] numbers){
+        //    int total = 0;
+        //    for(int i = 0; i < numbers.Length; i++)
+        //    {
+        //        total += numbers[i];
+        //    }
+
+        //    return total;
+        //}
+
+        //static double GetAvarage(int[] gradesArray)
+        //{
+        //    double sum = 0;
+        //    foreach (int grade in gradesArray)
+        //    {
+        //        sum += grade;
+        //    }
+
+        //    double avarage = (double)(sum/ gradesArray.Length);
+
+        //    return avarage; 
+
+        //}
+
+    }
 }
