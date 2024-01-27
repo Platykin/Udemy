@@ -12,6 +12,7 @@ namespace _07_Arrays
     {
         static void Main(string[] args)
         {
+            //Code tha became comments.
             #region
             //int[] grades = new int[5];
             //grades[0] = 20;
@@ -163,46 +164,68 @@ namespace _07_Arrays
             //Console.WriteLine(soma3);
             //}
             //int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 43, 66, 32, 32, 43, 54, 56, 4, 2 };
+            //ArrayList myArrayList = new ArrayList();
+            //ArrayList myArrayList2 = new ArrayList(100);
+
+            //myArrayList.Add(25);
+            //myArrayList.Add("Hello");
+            //myArrayList.Add(13.37);
+            //myArrayList.Add(13.37);
+            //myArrayList.Add(11);
+            //myArrayList.Add("Caviar");
+
+            //myArrayList.Remove(25);
+            //myArrayList.RemoveAt(1);
+
+            //Console.WriteLine(myArrayList.Count);
+
+
+            //double sum = 0;
+            //foreach (object obj in myArrayList)
+            //{
+            //    if (obj is int)
+            //    {
+            //        sum += Convert.ToDouble(obj);
+            //    }
+            //    else if (obj is double)
+            //    {
+            //        sum += (double)obj;
+            //    }
+            //    else if (obj is string)
+            //    {
+            //        Console.WriteLine(obj);
+            //    }
+            //}
+            //List<int> evenValues = new List<int> { };
+
             #endregion // Code that became comments.
-            //Code tha became comments. Improves readability
 
-            ArrayList myArrayList = new ArrayList();
-            ArrayList myArrayList2 = new ArrayList(100);
+            Hashtable studentsTable = new Hashtable();
 
-            myArrayList.Add(25);
-            myArrayList.Add("Hello");
-            myArrayList.Add(13.37);
-            myArrayList.Add(13.37);
-            myArrayList.Add(11);
-            myArrayList.Add("Caviar");
+            Student estudante1 = new Student(1, "Irgo", 3);
+            Student estudante2 = new Student(2, "Sarah", 4);
+            Student estudante3 = new Student(3, "Godofredo", 2);
+            Student estudante4 = new Student(4, "Burro", 1);
 
-            myArrayList.Remove(25);
-            myArrayList.RemoveAt(1);
+            studentsTable.Add(estudante1.Id, estudante1);
+            studentsTable.Add(estudante2.Id, estudante2);
+            studentsTable.Add(estudante3.Id, estudante3);
+            studentsTable.Add(estudante4.Id, estudante4);
 
-            Console.WriteLine(myArrayList.Count);
+            Student dadosEstudante1 = (Student)studentsTable[1];
 
-
-            double sum = 0;
-            foreach (object obj in myArrayList)
+            foreach (DictionaryEntry entry in studentsTable)
             {
-                if (obj is int)
-                {
-                    sum += Convert.ToDouble(obj);
-                }
-                else if (obj is double)
-                {
-                    sum += (double)obj;
-                }
-                else if (obj is string)
-                {
-                    Console.WriteLine(obj);
-                }
+                Student temp = (Student)entry.Value;
+                Console.WriteLine("------------");
+                Console.WriteLine("Numero de matricula: {0}", temp.Id);
+                Console.WriteLine("Nome: {0}", temp.Name);
+                Console.WriteLine("Media: {0}", temp.GPA);
+                Console.WriteLine("------------\n");
             }
-            List<int> evenValues = new List<int> { };
 
 
-
-
+            Console.WriteLine("Numero da matricula: {0} Nome: {1} Media: {2}", dadosEstudante1.Id, dadosEstudante1.Name, dadosEstudante1.GPA);
         }
 
         //public static int Sum(params int[] numbers){
@@ -229,5 +252,23 @@ namespace _07_Arrays
 
         //}
 
+
+        class Student
+        {
+            public int Id { get; set; }
+
+            public string Name { get; set; }
+
+            public float GPA { get; set; }
+
+            public Student(int id, string name, float gpa)
+            {
+                this.Id = id;
+                this.Name = name;
+                this.GPA = gpa;
+            }
+
+
+        }
     }
 }
