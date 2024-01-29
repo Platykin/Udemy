@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace _07_Arrays
@@ -197,37 +198,98 @@ namespace _07_Arrays
             //    }
             //}
             //List<int> evenValues = new List<int> { };
+            //Hashtable studentsTable = new Hashtable();
 
+            //Student estudante1 = new Student(1, "Irgo", 3);
+            //Student estudante2 = new Student(2, "Sarah", 4);
+            //Student estudante3 = new Student(3, "Godofredo", 2);
+            //Student estudante4 = new Student(4, "Burro", 1);
+
+            //studentsTable.Add(estudante1.Id, estudante1);
+            //studentsTable.Add(estudante2.Id, estudante2);
+            //studentsTable.Add(estudante3.Id, estudante3);
+            //studentsTable.Add(estudante4.Id, estudante4);
+
+            //Student dadosEstudante1 = (Student)studentsTable[1];
+
+            //foreach (DictionaryEntry entry in studentsTable)
+            //{
+            //    Student temp = (Student)entry.Value;
+            //    Console.WriteLine("------------");
+            //    Console.WriteLine("Numero de matricula: {0}", temp.Id);
+            //    Console.WriteLine("Nome: {0}", temp.Name);
+            //    Console.WriteLine("Media: {0}", temp.GPA);
+            //    Console.WriteLine("------------\n");
+            //}
+
+
+            //Console.WriteLine("Numero da matricula: {0} Nome: {1} Media: {2}", dadosEstudante1.Id, dadosEstudante1.Name, dadosEstudante1.GPA);
+
+            //Hashtable studentsTable = new Hashtable();
+
+            //Student[] studentsArray = new Student[6];
+
+            //studentsArray[0] = new Student(1, "Irgo", 7);
+            //studentsArray[1] = new Student(2, "Sarah", 9);
+            //studentsArray[2] = new Student(3, "Christian", 7);
+            //studentsArray[3] = new Student(4, "Vermei", 4);
+            //studentsArray[4] = new Student(2, "Carvas", 6);
+            //studentsArray[5] = new Student(5, "Pozag", 1);
+
+            //foreach (Student estudante in studentsArray)
+            //{
+
+            //    if(studentsTable.ContainsKey(estudante.Id))
+            //    {
+            //        Console.WriteLine("Sorry, a student with the same ID already exists\n");
+            //    }
+
+            //    else
+            //    {
+            //        studentsTable.Add(estudante.Id, estudante);
+            //        Console.WriteLine("Student with ID {0} added.\n", estudante.Id);
+            //    }
+
+            //}
+            //Dictionary<int, string> numeros = new Dictionary<int, string>();
+
+            //numeros.Add(1, "one");
+            //numeros.Add(2, "two");
+            //numeros.Add(3, "three");
+            //numeros.Add(4, "four");
+            //numeros.Add(5, "five");
+
+            //numeros.ContainsKey(0) ? Console.WriteLine(numeros[0]) : Console.WriteLine("nope");
             #endregion // Code that became comments.
 
-            Hashtable studentsTable = new Hashtable();
+            Stack<int> stack = new Stack<int>();
+            stack.Push(1);
+            stack.Push(2);
+            Console.WriteLine("The element of the top is {0}", stack.Peek());
 
-            Student estudante1 = new Student(1, "Irgo", 3);
-            Student estudante2 = new Student(2, "Sarah", 4);
-            Student estudante3 = new Student(3, "Godofredo", 2);
-            Student estudante4 = new Student(4, "Burro", 1);
+        }
 
-            studentsTable.Add(estudante1.Id, estudante1);
-            studentsTable.Add(estudante2.Id, estudante2);
-            studentsTable.Add(estudante3.Id, estudante3);
-            studentsTable.Add(estudante4.Id, estudante4);
 
-            Student dadosEstudante1 = (Student)studentsTable[1];
 
-            foreach (DictionaryEntry entry in studentsTable)
+        class Student
+        {
+            public int Id { get; set; }
+
+            public string Name { get; set; }
+
+            public float GPA { get; set; }
+
+            public Student(int id, string name, float gpa)
             {
-                Student temp = (Student)entry.Value;
-                Console.WriteLine("------------");
-                Console.WriteLine("Numero de matricula: {0}", temp.Id);
-                Console.WriteLine("Nome: {0}", temp.Name);
-                Console.WriteLine("Media: {0}", temp.GPA);
-                Console.WriteLine("------------\n");
+                this.Id = id;
+                this.Name = name;
+                this.GPA = gpa;
             }
 
 
-            Console.WriteLine("Numero da matricula: {0} Nome: {1} Media: {2}", dadosEstudante1.Id, dadosEstudante1.Name, dadosEstudante1.GPA);
         }
-
+    }
+}
         //public static int Sum(params int[] numbers){
         //    int total = 0;
         //    for(int i = 0; i < numbers.Length; i++)
@@ -251,24 +313,3 @@ namespace _07_Arrays
         //    return avarage; 
 
         //}
-
-
-        class Student
-        {
-            public int Id { get; set; }
-
-            public string Name { get; set; }
-
-            public float GPA { get; set; }
-
-            public Student(int id, string name, float gpa)
-            {
-                this.Id = id;
-                this.Name = name;
-                this.GPA = gpa;
-            }
-
-
-        }
-    }
-}
