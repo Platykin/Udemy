@@ -23,5 +23,17 @@ namespace Section9
             IsOn = false;
         }
 
+        public void WatchTV()
+        {
+            if (IsOn)
+            {
+                Console.WriteLine("Watching TV");
+            }
+            else
+            {
+                Console.WriteLine("You need to turn it on first");
+            }
+        }
+
     }
 }
