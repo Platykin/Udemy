@@ -14,47 +14,70 @@ namespace Section9
 
     class VideoPost : Post
     {
-        private static System.Timers.Timer relooj;
+        System.Threading.Timer timer;
 
-        public string VideoURL { get; set; }
-        public static double LengthSeconds { get; set; }
+        protected string VideoURL { get; set; }
+        public double LengthSeconds { get; set; }
 
-        public bool IsPlaying { get; set; }
+        protected bool IsPlaying { get; set; }
 
-        public static double StopedAt { get; set; }
+        public static double CurrentDuration { get; set; }
 
-        public VideoPost(string title, string videoURL, double length)
+        public VideoPost() { }
+
+        public VideoPost(string title, string sendByUsername,string videoURL, double length)
         {
             this.ID = GetNextId();
             this.Title = title;
-            this.SendByUsername = base.SendByUsername;
+            this.SendByUsername = sendByUsername;
             this.IsPublic = base.IsPublic;
-            VideoURL = videoURL;
+            this.VideoURL = videoURL;
             LengthSeconds = length;
             IsPlaying = false;
-            StopedAt = 0;
+            CurrentDuration = 0;
         }
 
-        public static void Play()
+        public void Play()
         {
-            relooj = new System.Timers.Timer(1000);
-            relooj.Elapsed += VideoTimer;
-            relooj.Start();
-            relooj.AutoReset = true;
-        }
-
-        private static void VideoTimer(object? sender, ElapsedEventArgs e)
-        {
-            if (e.SignalTime.Second < LengthSeconds)
+            if (!IsPlaying)
             {
-                Console.WriteLine($"{e.SignalTime.Minute}:{e.SignalTime.Second}");
+                IsPlaying = true;
+                Console.WriteLine("Playing");
+                timer = new System.Threading.Timer(TimerCallback, null, 0, 1000);
+            }
+        }
+
+        private void TimerCallback(object o) 
+        {
+            if(CurrentDuration < LengthSeconds)
+            {
+                CurrentDuration++;
+                Console.WriteLine("Video at {0}", CurrentDuration);
+                GC.Collect();
             }
             else
             {
-                relooj.Stop();
-                Console.WriteLine("Video ended!");
+                Stop();
             }
+
+
+
+
         }
+
+        public void Stop()
+        {
+            if(IsPlaying) 
+            { 
+                IsPlaying = false;  
+            Console.WriteLine("Stopped at {0}", CurrentDuration);
+            CurrentDuration = 0;
+            timer.Dispose();
+            }
+
+
+        }
+
 
         public override string ToString()
         {

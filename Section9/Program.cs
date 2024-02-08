@@ -45,10 +45,13 @@ namespace Inheritance
             #endregion
 
 
-            //VideoPost videoPost1 = new VideoPost("Cute bear rolling on his own shit", "https://www.yourtubes.com/SF81RSDAgdhkafe62dv342", 9.15);
-            //Console.WriteLine(videoPost1.ToString());
+            VideoPost videoPost1 = new VideoPost("Cute bear rolling on his own shit", "Dumb cubs","https://www.yourtubes.com/SF81RSDAgdhkafe62dv342", 9.15);
+            Console.WriteLine(videoPost1.ToString());
 
-
+            Console.WriteLine("Press any key to stop the video");
+            videoPost1.Play();
+            Console.ReadLine();
+            videoPost1.Stop();
 
         }
     }
