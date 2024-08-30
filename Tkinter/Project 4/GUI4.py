@@ -16,5 +16,6 @@ entry2.pack()
 label = ttk.Label(master = window, textvariable = string_variable)
 label.pack()
 
+
 # Run
 window.mainloop()
